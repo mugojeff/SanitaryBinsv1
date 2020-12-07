@@ -32,19 +32,19 @@ nav.navbar.bootsnav,
 .three_line:after,
 .header_tran .navigation .sub-nav,
 #header .stricky {
-  background: #9416b3;
+  background: #eeae0d;
 }
 
 .middel-part__block::before,
 .middel-part__block .logo:after,
 .middel-part__block .logo,
 .main_nav ul ul li:hover {
-  background: #9416b3;
+  background: black;
 }
 
 @media (max-width: 992px) {
   .middel-part__block {
-    background: #9416b3;
+    background: black;
   }
 }
 /*
@@ -67,7 +67,7 @@ nav.navbar.bootsnav,
 .header_tran .top_loction ul li a:hover,
 .header_tran .top_loction ul li a i,
 .color {
-  color: #9416b3;
+  color: #eeae0d;
 }
 
 /*
@@ -81,7 +81,7 @@ nav.navbar.bootsnav,
 .tparrows.tp-leftarrow:hover,
 .tparrows.tp-rightarrow:hover,
 .process_box {
-  border-color: #9416b3;
+  border-color: #eeae0d;
 }
 
 /* INNER_PAGE */
@@ -134,23 +134,23 @@ a.btn.xplus-btn.pricing:hover,
 .nf-carousel-theme-top .owl-controls .owl-nav .owl-next:hover,
 .nf-carousel-theme .owl-controls .owl-nav .owl-prev,
 .nf-carousel-theme .owl-controls .owl-nav .owl-next {
-  background: #9416b3;
+  background: #eeae0d;
 }
 
 .social_hover {
-  background: #9416b3;
+  background: #eeae0d;
   /* The Fallback */
-  background: rgba(19, 149, 149, 1);
+  background: #ff69b4;
 }
 
 .bullet_round:before,
 .second_righ:before {
-  box-shadow: 0 0 6px 6px rgba(19, 149, 149, 1);
+  box-shadow: 0 0 6px 6px #ff69b4;
 }
 
 .skinoneplancolor,
 div .secondary_bg {
-  background: rgba(19, 149, 149, 1);
+  background: #ff69b4;
 }
 
 /*
@@ -193,7 +193,7 @@ a.color-primary,
 .contact .icon-circle,
 .nf-carousel-theme-top .owl-controls .owl-nav .owl-prev,
 .nf-carousel-theme-top .owl-controls .owl-nav .owl-next {
-  color: rgba(19, 149, 149, 1);
+  color: #ff69b4;
 }
 
 /*
@@ -224,17 +224,17 @@ a.btn.xplus-btn.pricing:hover,
 .nf-carousel-theme-top .owl-controls .owl-nav .owl-next,
 .nf-carousel-theme-top .owl-controls .owl-nav .owl-prev:hover,
 .nf-carousel-theme-top .owl-controls .owl-nav .owl-next:hover {
-  border-color: rgba(19, 149, 149, 1);
+  border-color: #ff69b4;
 }
 
 .team-member .inner-box .overlay-box:after,
 .ui-input-group > input:focus,
 .rightGrip:before,
 .leftGrip:before {
-  border-bottom-color: rgba(19, 149, 149, 1);
+  border-bottom-color: #ff69b4;
 }
 
 .ribbon:before,
 .ribbon:after {
-  border-top-color: rgba(19, 149, 149, 1);
+  border-top-color: #ff69b4;
 }

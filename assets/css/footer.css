@@ -11,7 +11,8 @@
 /* footer */
 .footer {
   background: #282828;
-  top: 30px;
+  bottom: 10px;
+  height: 250px;
 }
 .footer_logo p {
   margin-top: 15px;
