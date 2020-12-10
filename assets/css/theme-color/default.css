@@ -32,7 +32,7 @@ nav.navbar.bootsnav,
 .three_line:after,
 .header_tran .navigation .sub-nav,
 #header .stricky {
-  background: #eeae0d;
+  background: #fdd017;
 }
 
 .middel-part__block::before,
@@ -67,7 +67,7 @@ nav.navbar.bootsnav,
 .header_tran .top_loction ul li a:hover,
 .header_tran .top_loction ul li a i,
 .color {
-  color: #eeae0d;
+  color: #fdd017;
 }
 
 /*
@@ -81,7 +81,7 @@ nav.navbar.bootsnav,
 .tparrows.tp-leftarrow:hover,
 .tparrows.tp-rightarrow:hover,
 .process_box {
-  border-color: #eeae0d;
+  border-color: #fdd017;
 }
 
 /* INNER_PAGE */
@@ -134,11 +134,11 @@ a.btn.xplus-btn.pricing:hover,
 .nf-carousel-theme-top .owl-controls .owl-nav .owl-next:hover,
 .nf-carousel-theme .owl-controls .owl-nav .owl-prev,
 .nf-carousel-theme .owl-controls .owl-nav .owl-next {
-  background: #eeae0d;
+  background: #fdd017;
 }
 
 .social_hover {
-  background: #eeae0d;
+  background: #fdd017;
   /* The Fallback */
   background: #df61a4;
 }
