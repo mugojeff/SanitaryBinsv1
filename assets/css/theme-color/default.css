@@ -140,17 +140,17 @@ a.btn.xplus-btn.pricing:hover,
 .social_hover {
   background: #eeae0d;
   /* The Fallback */
-  background: #ff69b4;
+  background: #df61a4;
 }
 
 .bullet_round:before,
 .second_righ:before {
-  box-shadow: 0 0 6px 6px #ff69b4;
+  box-shadow: 0 0 6px 6px #df61a4;
 }
 
 .skinoneplancolor,
 div .secondary_bg {
-  background: #ff69b4;
+  background: #df61a4;
 }
 
 /*
@@ -193,7 +193,7 @@ a.color-primary,
 .contact .icon-circle,
 .nf-carousel-theme-top .owl-controls .owl-nav .owl-prev,
 .nf-carousel-theme-top .owl-controls .owl-nav .owl-next {
-  color: #ff69b4;
+  color: #df61a4;
 }
 
 /*
@@ -224,17 +224,17 @@ a.btn.xplus-btn.pricing:hover,
 .nf-carousel-theme-top .owl-controls .owl-nav .owl-next,
 .nf-carousel-theme-top .owl-controls .owl-nav .owl-prev:hover,
 .nf-carousel-theme-top .owl-controls .owl-nav .owl-next:hover {
-  border-color: #ff69b4;
+  border-color: #df61a4;
 }
 
 .team-member .inner-box .overlay-box:after,
 .ui-input-group > input:focus,
 .rightGrip:before,
 .leftGrip:before {
-  border-bottom-color: #ff69b4;
+  border-bottom-color: #df61a4;
 }
 
 .ribbon:before,
 .ribbon:after {
-  border-top-color: #ff69b4;
+  border-top-color: #df61a4;
 }
