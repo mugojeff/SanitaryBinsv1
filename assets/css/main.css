@@ -84,16 +84,16 @@ body {
   border-radius: 2px;
 }
 .business .category-name {
-  background: #00a7ea;
+  background: black;
 }
 .culture .category-name {
-  background: #eeae0d;
+  background: #df61a4;
 }
 .politics .category-name {
-  background: #eeae0d;
+  background: black;
 }
 .finance .category-name {
-  background: #2c2a4a;
+  background: #df61a4;
 }
 .sports .category-name {
   background: #a1e44d;
@@ -139,7 +139,7 @@ body {
 }
 
 .read-btn:hover {
-  background: #f6f6f6;
+  background: #df61a4;
 }
 
 /***************/

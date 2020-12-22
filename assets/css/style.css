@@ -8900,3 +8900,84 @@ a.btn.xplus-btn.pricing.active:hover {
 .project-detail-block {
 	padding: 30px;
 }
+
+.center {
+      
+	margin: 0 auto;
+	
+  }
+
+  .awesome {
+	
+	font-family: futura;
+	font-style: italic;
+	
+	width:100%;
+	
+	margin: 0 auto;
+	text-align: center;
+	
+	color:#313131;
+	font-size:25px;
+	font-weight: bold;
+	position: center;
+	-webkit-animation:colorchange 20s infinite alternate;
+	
+	
+  }
+
+  @-webkit-keyframes colorchange {
+	0% {
+	  
+	  color: rgb(223, 97, 166);
+	}
+	
+	10% {
+	  
+	  color: rgb(223, 97, 164);
+	}
+	
+	20% {
+	  
+	  color: black;
+	}
+	
+	30% {
+	  
+	  color: #d35400;
+	}
+	
+	40% {
+	  
+	  color: #df61a4;
+	}
+	
+	50% {
+	  
+	  color: black;
+	}
+	
+	60% {
+	  
+	  color: #df61a4;
+	}
+	
+	70% {
+	  
+	  color: #fdd017;
+	}
+	80% {
+   
+	  color: #f1c40f;
+	}
+	
+	90% {
+   
+	  color: #f8c701;
+	}
+	
+	100% {
+	  
+	  color: #df61a4;
+	}
+  }

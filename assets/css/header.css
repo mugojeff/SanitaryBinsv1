@@ -838,8 +838,8 @@ ul.menu-col li a:focus {
   }
 }
 .top-info__block {
-  padding-bottom: 34px;
-  padding-top: 38px;
+  padding-bottom: 3px;
+  padding-top: 30px;
 }
 .top-info__block li {
   border-right: 1px solid #cfcfd0;
