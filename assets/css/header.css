@@ -1,3 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  padding: 10px 100px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  background: black;
+}
+nav .logo {
+  float: left;
+}
+nav .logo img {
+  height: 100px;
+  transition: 0.5s;
+}
+nav ul {
+  float: right;
+  align-content: center;
+  margin: 0;
+  padding: 25px;
+  display: flex;
+}
+nav ul li a {
+  list-style: 80px;
+  color: white;
+  padding: 5px 20px;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+nav ul li a.active {
+  color: #fff;
+  background: #f00;
+}
 /* Navbar
  =================================*/
 nav.navbar.bootsnav {
@@ -842,7 +882,7 @@ ul.menu-col li a:focus {
   padding-top: 30px;
 }
 .top-info__block li {
-  border-right: 1px solid #cfcfd0;
+  border-right: 1px solid;
 }
 .top-info__block li:last-child {
   border: medium none;

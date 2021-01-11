@@ -21,7 +21,126 @@
 		<link href="assets/css/header.css" rel="stylesheet" type="text/css">
 		<link href="assets/css/footer.css" rel="stylesheet" type="text/css" />
 		<link href="assets/css/theme-color/default.css" rel="stylesheet" type="text/css" id="theme-color" />
-    </head>
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+			.container {
+	          position: relative;
+	          margin-top: 100px;
+            }
+            .container img {
+	          display: block;
+	           width: 100%;
+                }
+            nav {
+	             position: fixed;
+                z-index: 10;
+                left: 0;
+                right: 0;
+                top: 0;
+                font-family: 'Montserrat', sans-serif;
+                padding: 0 5%;
+                height: 100px;
+                background-color: black;
+            }
+            nav .logo {
+                float: left;
+                width: 40%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                font-size: 24px;
+                color: #fff;
+            }
+            nav .links {
+                float: right;
+                padding: 0;
+                margin: 0;
+                width: 60%;
+                height: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            nav .links li {
+                list-style: none;
+            }
+            nav .links a {
+                display: block;
+                padding: 1em;
+                font-size: 16px;
+                font-weight: bold;
+                color: #fff;
+                text-decoration: none;
+            }
+            #nav-toggle {
+                position: absolute;
+                top: -100px;
+            }
+            nav .icon-burger {
+                display: none;
+                position: absolute;
+                right: 5%;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            nav .icon-burger .line {
+                width: 30px;
+                height: 5px;
+                background-color: #fff;
+                margin: 5px;
+                border-radius: 3px;
+                transition: all .3s ease-in-out;
+            }
+            @media screen and (max-width: 768px) {
+                nav .logo {
+                    float: none;
+                    width: auto;
+                    justify-content: center;
+                    background: black;
+                }
+                nav .links {
+                    float: none;
+                    position: fixed;
+                    z-index: 9;
+                    left: 0;
+                    right: 0;
+                    top: 100px;
+                    bottom: 100%;
+                    width: auto;
+                    height: auto;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    background-color: rgba(0,0,0,.8);
+                    overflow: hidden;
+                    box-sizing: border-box;
+                    transition: all .5s ease-in-out;
+                }
+                nav .links a {
+                    font-size: 20px;
+                }
+                nav :checked ~ .links {
+                    bottom: 0;
+                }
+                nav .icon-burger {
+                    display: block;
+                }
+                nav :checked ~ .icon-burger .line:nth-child(1) {
+                    transform: translateY(10px) rotate(225deg);
+                }
+                nav :checked ~ .icon-burger .line:nth-child(3) {
+                    transform: translateY(-10px) rotate(-225deg);
+                }
+                nav :checked ~ .icon-burger .line:nth-child(2) {
+                    opacity: 0;
+                }
+                
+            }
+
+
+
+
+		</style>
+	</head>
     <body>
 <!--loader-->
 <div id="preloader">
@@ -40,205 +159,30 @@
     <div class="sk-circle12 sk-child"></div>
   </div>
 </div>
+<nav>
+	<input id="nav-toggle" type="checkbox">
+	<div class="logo"><a href="index.html" class="active"> <img src="assets/images/logo/Hers-logo.png" alt="Logo" style="height: 100px; width: auto; background: black;"> </a></div>
+	<ul class="links">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="about3.html">About Us</a></li>
+		<li><a href="serve.html">Our Services</a></li>
+		<li><a href="testimonial.html">OUR CLIENTS</a></li>
+		<li><a href="blog.html">Blog</a></li>
+		<li><a href="contact.html">Contact US</a></li>
+	</ul>
+	<label for="nav-toggle" class="icon-burger">
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+		
+	</label>
+</nav>
 
 <!--loader--> 
 		<!--Header Section Start Here
 		==================================-->
 		<!-- HEADER -->
-		<header>
-			
-			<div class="middel-part__block">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-4 logo col-md-12 d-flex align-items-center">
-
-							<a href="index.html"> <img src="assets/images/logo/Hers-logo.png" alt="Logo"> </a>
-				
-							<div class="navbar-header">
-								<button type="button" class="navbar-toggle hidden-lg-up" data-toggle="collapse" data-target="#navbar-menu">
-									<i class="fa fa-bars"></i>
-								</button>
-
-							</div>
-						</div>
-						<div class="col-lg-8 col-md-12">
-							<div class="top-info__block text-right">
-								<ul>
-									<li>
-										<i class="fa fa-map-marker"></i>
-										<p>
-											Langata Rd Auto Village Complex 
-											<span> Langata, Nairobi</span>
-										</p>
-									</li>
-									<li>
-										<i class="fa fa-phone"></i>
-										<p>
-											Call Us
-											<span> +254 724 074300</span>
-										</p>
-									</li>
-									<li>
-										<i class="fa fa-envelope" aria-hidden="true"></i>
-										<p>
-											Mail Us
-											<span> <a href="mailto:info@hersbins.co.ke">
-												info@hersbins.co.ke</a> </span>
-										</p>
-									</li>
-								</ul>
-							</div>
-							<marquee><h4 style="color: #df61a4;" >We are offering affordable coronavirus surfaces disinfection services #HersBins Cares 💝</h4></marquee>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="main_nav stricky-header__top navbar-toggleable-md">
-
-				<nav class="navbar navbar-default navbar-sticky bootsnav">
-					<div class="container">
-						<!-- Start Header Navigation -->
-
-						<!-- End Header Navigation -->
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse" id="navbar-menu">
-							<ul class="nav navbar-nav mobile-menu d-flex justify-content-between">
-								<li>
-									<a href="index.html">Home</a>
-									
-								</li>
-								<li>
-									<a href="about3.html">About us</a>
-									<!--<span class="submenu-button"></span>
-									<ul class="dropdown-menu">
-										<li>
-											<a href="about3.html">Who we are</a>
-										</li>
-										<li>
-											<a href="leadership.html">Our Team</a>
-										</li>
-									</ul>-->
-								</li>
-								<li>
-									<a href="serve.html">Our Services</a>
-									<!--<span class="submenu-button"></span>
-									<ul class="dropdown-menu">
-										<li>
-											<a href="services.html">Sanitary Services</a>
-										</li>
-										<li>
-											<a href="services-details.html">cleaning services</a>
-										</li>
-
-									</ul>-->
-								</li>
-								<!---<li>
-									<a href="javascript:avoid(0);">Project</a>
-									<span class="submenu-button"></span>
-									<ul class="dropdown-menu">
-										<li>
-											<a href="project.html">project</a>
-										</li>
-
-										<li>
-											<a href="project-details.html">Projec Details</a>
-										</li>
-
-									</ul>
-								</li>--->
-
-								<li>
-									<a href="blog.html">blog</a>
-									<!---<span class="submenu-button"></span>
-									<ul class="dropdown-menu">
-										<li>
-											<a href="blog.html">Blog</a>
-										</li>
-										<li>
-											<a href="blog-detail.html">Blog Details</a>
-										</li>
-									</ul>---->
-								</li>
-
-								<!--<li>
-									<a href="javascript:avoid(0);">pages</a>
-									<span class="submenu-button"></span>
-									<ul class="dropdown-menu">
-										<li>
-											<a href="portfolio-masonry.html">Gallery Masonry</a>
-										</li>
-										<li>
-											<a href="portfolio-grid.html">Gallery Grid</a>
-										</li>
-										<li>
-											<a href="team.html">Team</a>
-										</li>
-
-										<li>
-											<a href="pricing.html">pricing</a>
-										</li>
-										<li>
-											<a href="faq.html">Faq</a>
-										</li>
-										<li>
-											<a href="register.html">Register</a>
-										</li>
-										<li>
-											<a href="login.html">login</a>
-										</li>
-										<li>
-											<a href="testimonial.html">Testimonials</a>
-										</li>
-										<li>
-											<a href="404.html">404 Error</a>
-										</li>
-										<li>
-											<a href="blank.html">blank</a>
-										</li>
-									</ul>
-								</li>
-								<li>-->
-									<!--<a href="#!">Shop</a>
-									<span class="submenu-button"></span>
-									Nav Dropdown 
-									<ul class="dropdown-menu">
-										<li>
-											<a href="shop.html">Shop</a>
-										</li>
-										<li>
-											<a href="shop-sidebar.html">shop sidebar</a>
-										</li>
-										<li>
-											<a href="shop-details.html">shop details</a>
-										</li>
-										<li>
-											<a href="cart.html">cart</a>
-										</li>
-										<li>
-											<a href="checkout.html">Checkout</a>
-										</li>
-									</ul>
-									 End Nav Dropdown 
-								</li>-->
-								<li>
-									<a href="contact.html">Contact us</a>
-									<!--<span class="submenu-button"></span>
-									<ul class="dropdown-menu">
-										<li>
-											<a href="contact.html">contact</a>
-										</li>
-										<li>
-											<a href="contact1.html">contact 2</a>
-										</li>
-									</ul>--->
-								</li>
-							</ul>
-						</div>
-						<!--navbar-collapse -->
-					</div>
-				</nav>
-			</div>
-		</header>
+	
 
 
 		<!-- END HEADER -->
@@ -266,103 +210,25 @@
 
 		<!-- Footer_Section -->
 			<!-- Footer_Section -->
-			<footer class="footer pt-50">
-				<div class="container">
-					<div class="row">
-						<!--<div class="col-md-6 col-lg-9 footer_logo">
-							<a href="index.html"><img src="logo.png" alt=""></a>
-							<p>
-								Hers Bins provides a complete range of washroom services including sanitary bins for sanitary waste disposal and hygiene services.Our sanitary hygiene units are designed to meet our customers duty of care obligation
-							</p>
-							<ul>
-								<li>
-									<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
-								</li>
-							</ul>
-						</div>-->
-	
-						<!--<div class="col-md-6 col-lg-2 mt-xs-30 link_footer">
-							<h4>Information</h4>
-							<ul>
-								<li>
-									<a href="#">About us</a>
-								</li>
-								<li>
-									<a href="#">Service</a>
-								</li>
-								<li>
-									<a href="#">Project</a>
-								</li>
-								<li>
-									<a href="#">Blog</a>
-								</li>
-								<li>
-									<a href="#">Contact us</a>
-								</li>
-							</ul>
-						</div>
-	
-						<div class="col-md-6 col-lg-3 mt-sm-30 mt-xs-30 footer-latest-news">
-							<h4>Latest News</h4>
-							<div class="single-news">
-								<h5><a href="#">How can be successfull in market place..</a></h5>
-								<span>13 Nov, 2018  /  Business</span>
-							</div>
-							<div class="single-news">
-								<h5><a href="#">How can be successfull in market place..</a></h5>
-								<span>13 Nov, 2018  /  Business</span>
-							</div>
-						</div>
-	
-						<div class="col-md-6 col-lg-4 mt-sm-30 mt-xs-30 footer-subscribe">
-							<h4>Subscribe Us</h4>
-							<p>
-								Lorem ipsum dolor amet natum latine copiosa at quo, suas labore saperet has there any quote.
-							</p>
-							<form action="#">
-								<input type="text" placeholder="Enter your e-mail">
-								<button class="btn-text">
-									<i class="fa fa-angle-right" aria-hidden="true"></i>
-								</button>
-							</form>
-	
-						</div>
-	
-					</div>
-				</div>--->
-				<div class="bottom-footer text-center">
-					<div class="container">
-						<p>Follow Us </p>
-									<div class="col-sm-7">
-										<div class="social-link__block text-right">
-											<a href="https://www.facebook.com/HERSBINS-306689586654562/" class="facebook"> <i class="fa fa-facebook"></i> </a>
-											<a href="https://twitter.com/hersbins" class="twitter"> <i class="fa fa-twitter"></i> </a>
-											<a href="https://www.instagram.com/hersbins/" class="instagram"> <i class="fa fa-instagram"></i> </a>
-											<a href="#" class="linkedin"> <i class="fa fa-linkedin"></i> </a>
-			
-										</div>
+			<div class="bottom-footer text-center">
+				<div class="container" style="background: black;">
+					<p style="color: white;">Follow Us </p>
+								<div class="col-sm-7">
+									<div class="social-link__block text-right">
+										<a href="https://www.facebook.com/HERSBINS-306689586654562/" class="facebook"> <i class="fa fa-facebook"></i> </a>
+										<a href="https://twitter.com/hersbins" class="twitter"> <i class="fa fa-twitter"></i> </a>
+										<a href="https://www.instagram.com/hersbins/" class="instagram"> <i class="fa fa-instagram"></i> </a>
+										<a href="#" class="linkedin"> <i class="fa fa-linkedin"></i> </a>
+		
 									</div>
-							<p>
-								© 2020 Hers Bins Ltd. All Rights Reserved
-								<!--<a href="https://jumbotechsolutions" target="_blank">we build SEO oriented websites and web solutions</a>-->
-							</p>
+								</div>
+						<p style="color: white;">
+							© 2020 Hers Bins Ltd. All Rights Reserved
+							<!--<a href="https://jumbotechsolutions" target="_blank">we build SEO oriented websites and web solutions</a>-->
+						</p>
 	
-						</div>
 					</div>
 				</div>
-			</footer>
 		<!-- Footer_Section_End -->
 		<!-- Site Wraper End -->
 	<!-- Site Wraper End --> 
